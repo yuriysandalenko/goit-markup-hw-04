@@ -90,8 +90,7 @@ align-items: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .nav-link:hover,
@@ -99,12 +98,8 @@ align-items: center;
     color: #404bbf;
 
 }
-.nav-studio {
-    position: relative;
-        color: #404bbf;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav-studio ::after {
+
+.nav-studio::after {
     content: "";
     width: 100%;
     position: absolute;
@@ -127,8 +122,7 @@ align-items: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
 .contacts-link:focus {

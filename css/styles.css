@@ -339,18 +339,27 @@ margin-bottom: 8px;
 
 color: #434455;
 }
+
+.banking-image-text {
+
+    position: relative;
+    overflow: hidden;
+}
+.banking-image-text:hover .overlay {
+    transform: translateY(0%);
+    
+}
 .banking-photo {
     background-color: #fff;
     width: calc((100% - 48px) / 3);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-        overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* position: relative;
+        overflow: hidden; */ 
     
 }
-.banking-photo:hover .overlay{
+/* .banking-photo:hover .overlay{
     transform: translateX(0);
-}
+} */
 
    
 
@@ -475,11 +484,12 @@ font-family: "Roboto", sans-serif;
     max-width: 208px;
     padding: 0;
    
-    margin-right: 0;
+    margin: 0;
 }
 
 .section-footer {
     display: flex;
+    align-items: baseline
 }
 .link-footer {
    
